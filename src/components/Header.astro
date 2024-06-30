@@ -1,57 +1,60 @@
-<div
-  class="navbar justify-between bg-gradient-to-r from-violet-600 to-indigo-600 text-gray-200"
->
-  <div>
-    <div class="dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-        <i class="fa-solid fa-bars fa-xl"></i>
+<div class="bg-gradient-to-r from-violet-600 to-indigo-600">
+  <div
+    class="navbar container mx-auto w-full justify-between text-gray-200"
+  >
+    <div>
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-lg dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-64 p-2 shadow text-gray-300 bg-gradient-to-r from-violet-600 to-indigo-600"
+        >
+          <li><a href="/">Home</a></li>
+          <li><a href="life-insurance">Life Insurance</a></li>
+          <li><a href="health-insurance">Health Insurance</a></li>
+          <li><a href="about-us">About Us</a></li>
+          <li><a href="contact-us">Contact Us</a></li>
+        </ul>
       </div>
-      <ul
-        tabindex="0"
-        class="menu menu-lg dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-64 p-2 shadow text-gray-300 bg-gradient-to-r from-violet-600 to-indigo-600"
+      <a class="btn btn-ghost" href="/">
+        <img
+          src="/nav-logo.svg"
+          width={80}
+          height={60}
+          alt="assure guard logo"
+        /></a
       >
+    </div>
+    <div class="hidden lg:flex font-semibold">
+      <ul class="menu menu-horizontal px-1 text-base space-x-6">
         <li><a href="/">Home</a></li>
         <li><a href="life-insurance">Life Insurance</a></li>
-        <li><a href="health-insurance">Health Insurance</a></li>
+        <li>
+          <a href="health-insurance">Health Insurance</a>
+        </li>
         <li><a href="about-us">About Us</a></li>
         <li><a href="contact-us">Contact Us</a></li>
       </ul>
     </div>
-    <a class="btn btn-ghost" href="/">
-      <img
-        src="/nav-logo.svg"
-        width={80}
-        height={60}
-        alt="assure guard logo"
-      /></a
-    >
-  </div>
-  <div class="hidden lg:flex font-semibold">
-    <ul class="menu menu-horizontal px-1 text-lg space-x-6">
-      <li><a href="/">Home</a></li>
-      <li><a href="life-insurance">Life Insurance</a></li>
-      <li>
-        <a href="health-insurance">Health Insurance</a>
-      </li>
-      <li><a href="about-us">About Us</a></li>
-      <li><a href="contact-us">Contact Us</a></li>
-    </ul>
-  </div>
-  <div class="hidden lg:flex">
-    <ul class="menu menu-horizontal px-1 text-sm">
-      <li class="flex flex-row items-center">
-        Address: 
-        <a href="https://maps.app.goo.gl/qd2ZrmD3nVRsY2aJA" target="_blank">
-            <i class="fa-solid fa-location-dot"></i> 9763 Vía Pavia, Burbank, CA 91504
-        </a>
-      </li>
-      <li class="flex flex-row items-center">
-        Phone:
-        <a href="tel:+18186878338">
-          <i class="fa-solid fa-mobile-screen-button"></i>
-          (818) 687-8338
-        </a>
-      </li>
-    </ul>
+    <div class="hidden lg:flex">
+      <ul class="menu menu-horizontal px-1 text-sm">
+        <li class="flex flex-row items-center">
+          Address:
+          <a href="https://maps.app.goo.gl/qd2ZrmD3nVRsY2aJA" target="_blank">
+            <i class="fa-solid fa-location-dot"></i> 9763 Vía Pavia, Burbank, CA
+            91504
+          </a>
+        </li>
+        <li class="flex flex-row items-center">
+          Phone:
+          <a href="tel:+18186878338">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            (818) 687-8338
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
