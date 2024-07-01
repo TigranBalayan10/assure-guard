@@ -1,33 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { getCollection, getEntry } from "astro:content";
-
-const healthInsurance = await getCollection("health-insurance");
+import HealthInsuranceCard from "../components/HealthInsuranceCard.astro";
 ---
 
 <Layout>
   <div
-    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 lg:gap-16 justify-items-center m-4"
+    class="flex justify-center gap-8 max-sm:flex-col m-8"
   >
-    {
-      healthInsurance.map((health) => (
-        <div class="card bg-base-100 w-full max-w-sm shadow-xl">
-          <figure class="px-10 pt-10 w-full h-64 flex items-center justify-center">
-            <img
-              src={health.data.image}
-              alt={health.data.title}
-              class="rounded-xl object-contain w-full h-full"
-            />
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">{health.data.title}</h2>
-            <p>{health.data.description}</p>
-            <div class="card-actions">
-              <button class="btn btn-primary btn-link">Read More</button>
-            </div>
-          </div>
-        </div>
-      ))
-    }
+    <HealthInsuranceCard />
   </div>
 </Layout>

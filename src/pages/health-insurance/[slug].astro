@@ -1,0 +1,37 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import HealthInsuranceCard from "../../components/HealthInsuranceCard.astro";
+// 1. Generate a new path for every collection entry
+export async function getStaticPaths() {
+  const healthInsurance = await getCollection("health-insurance", ({ id }) => {
+    return (
+      id.startsWith("covered-california") || id.startsWith("private-insurance")
+    );
+  });
+  return healthInsurance.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+// 2. For your template, you can get the entry directly from the prop
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<Layout>
+  <div>
+    <div class="prose prose-lg overflow-visible p-14 mx-auto max-w-6xl">
+      <Content />
+      <h3>Top Insurance Providers</h3>
+      <p>
+        Our licensed insurance agents work with leading insurance providers to
+        offer you the best coverage options. Some of the top insurance providers
+        we partner with include:
+      </p>
+      <div class="flex justify-center gap-8 max-sm:flex-col m-8">
+      <HealthInsuranceCard />
+      </div>  
+    </div>
+  </div>
+</Layout>
