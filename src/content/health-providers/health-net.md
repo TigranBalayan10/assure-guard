@@ -4,36 +4,36 @@ description: Health Net is a health insurance company that offers a variety of h
 image: /img/health-insurance/health-net.svg
 ---
 
-# Healthnet Insurance Coverage
+## Healthnet Insurance Coverage
 
 Healthnet is a leading health insurance provider that offers comprehensive coverage options to meet your healthcare needs. Whether you're an individual, family, or business, Healthnet has a plan tailored to your specific requirements.
 
-## Individual and Family Plans
+### Individual and Family Plans
 
 Healthnet offers a range of individual and family plans to suit your budget and healthcare needs:
 
-### HMO Plans
+#### HMO Plans
 
 - Access to a wide network of healthcare providers
 - Primary Care Physician (PCP) coordinates your care
 - Referrals required for specialist visits
 - Lower out-of-pocket costs compared to other plans
 
-### PPO Plans
+#### PPO Plans
 
 - Flexibility to choose healthcare providers both in and out of network
 - No referrals needed for specialist visits
 - Higher out-of-pocket costs compared to HMO plans
 - Out-of-network coverage available
 
-### HSA-compatible Plans
+#### HSA-compatible Plans
 
 - High-deductible health plans (HDHPs) that allow you to open a Health Savings Account (HSA)
 - Tax-advantaged savings for qualified medical expenses
 - Lower monthly premiums compared to traditional plans
 - Preventive care covered before deductible
 
-## Coverage Benefits
+### Coverage Benefits
 
 Healthnet plans offer a wide range of coverage benefits, including:
 
@@ -46,7 +46,7 @@ Healthnet plans offer a wide range of coverage benefits, including:
 - Rehabilitation services and devices
 - Laboratory services and diagnostic imaging
 
-## Provider Network
+### Provider Network
 
 Healthnet has an extensive network of healthcare providers, including:
 
@@ -59,7 +59,7 @@ Healthnet has an extensive network of healthcare providers, including:
 
 You can easily search for in-network providers using Healthnet's online provider directory or by contacting customer service.
 
-## Prescription Drug Coverage
+### Prescription Drug Coverage
 
 Healthnet plans offer comprehensive prescription drug coverage, including:
 
@@ -68,7 +68,7 @@ Healthnet plans offer comprehensive prescription drug coverage, including:
 - Specialty pharmacy services for complex medical conditions
 - Drug formulary that lists covered medications and their tier levels
 
-## Additional Benefits
+### Additional Benefits
 
 Healthnet offers additional benefits to support your overall well-being, such as:
 
@@ -77,7 +77,7 @@ Healthnet offers additional benefits to support your overall well-being, such as
 - Telemedicine services for virtual consultations with healthcare providers
 - Mobile app for easy access to your plan information, ID card, and provider search
 
-## Get a Quote
+### Get a Quote
 
 To learn more about Healthnet coverage options and get a personalized quote, visit our website or contact our sales team. Our knowledgeable representatives will help you find the right plan to meet your healthcare needs and budget.
 

@@ -7,9 +7,11 @@ const healthProviders = await getCollection("health-providers");
 ---
 
 <Layout>
-  <div
-    class="flex justify-center gap-8 max-sm:flex-col m-8"
-  >
+  <h1 class="text-center text-4xl font-bold mt-8">Health Providers</h1>
+  <p class="text-center text-lg mt-4">
+    Find the best health providers in your area.
+  </p>
+  <div class="flex justify-center gap-8 max-sm:flex-col m-8">
     <HealthProvidersCard healthProviders={healthProviders} />
   </div>
 </Layout>
