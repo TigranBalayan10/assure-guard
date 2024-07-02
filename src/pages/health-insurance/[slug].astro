@@ -23,7 +23,7 @@ const { Content } = await entry.render();
   <div class="prose prose-lg overflow-visible p-14 mx-auto max-w-6xl">
     <Content />
     <div class="mt-12 text-center">
-      <a href="/health-providers" class="btn no-underline btn-block">
+      <a href={entry.id === "covered-california.md"? "/health-providers-subsidized": "/health-providers-unsubsidized"} class="btn no-underline btn-block">
         Find a Provider
       </a>
     </div>
