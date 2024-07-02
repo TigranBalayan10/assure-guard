@@ -1,0 +1,36 @@
+---
+import type { CollectionEntry } from 'astro:content';
+interface Props {
+  healthProviders: CollectionEntry<"health-providers">[];
+}
+const { healthProviders } = Astro.props;
+---
+
+
+<div class="flex flex-wrap justify-center gap-8 m-5">
+    {
+      healthProviders.map((health) => (
+        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+          <div class="card bg-base-100 shadow-xl h-full">
+            <figure class="px-6 pt-6 h-48">
+              <img
+                src={health.data.image}
+                alt={health.data.title}
+                class="rounded-xl object-contain w-full h-full"
+              />
+            </figure>
+            <div class="card-body items-center text-center overflow-hidden">
+              <h2 class="card-title">{health.data.title}</h2>
+              <p class="line-clamp-3">{health.data.description}</p>
+              <div class="card-actions mt-4">
+                <a href={`health-insurance/${health.slug}`} class="btn btn-primary">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+
