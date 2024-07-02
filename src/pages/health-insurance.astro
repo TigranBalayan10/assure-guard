@@ -1,12 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import HealthInsuranceCard from "../components/HealthInsuranceCard.astro";
+import { getCollection } from "astro:content";
+
+const healthInsuranceSub = await getCollection("health-insurance", ({id}) => {
+    return id.startsWith("covered-california") || id.startsWith("private-insurance");
+});
 ---
 
 <Layout>
   <div
     class="flex justify-center gap-8 max-sm:flex-col m-8"
   >
-    <HealthInsuranceCard />
+    <HealthInsuranceCard healthInsurance={healthInsuranceSub} />
   </div>
 </Layout>

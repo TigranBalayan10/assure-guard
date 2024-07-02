@@ -1,31 +1,36 @@
 ---
-import { getCollection } from "astro:content";
-
-const healthInsurance = await getCollection("health-insurance", ({id}) => {
-    return id.startsWith("covered-california") || id.startsWith("private-insurance");
-});
-
+import type { CollectionEntry } from 'astro:content';
+interface Props {
+  healthInsurance: CollectionEntry<"health-insurance">[];
+}
+const { healthInsurance } = Astro.props;
 ---
 
-{
-  healthInsurance.map((health) => (
-    <div class="card bg-base-100 w-full shadow-xl">
-      <div class="card-body items-center text-center">
-        <figure class="px-10 pt-10 w-full h-64 flex items-center justify-center mb-5">
-          <img
-            src={health.data.image}
-            alt={health.data.title}
-            class="rounded-xl object-contain w-full h-full"
-          />
-        </figure>
-        <h2 class="card-title">{health.data.title}</h2>
-        <p class="mb-4">{health.data.description}</p>
-        <div class="card-actions mt-6">
-          <a href={`/health-insurance/${health.slug}`} class="btn btn-primary btn-wide">
-            Learn More
-          </a>
+
+<div class="flex flex-wrap justify-center gap-8 m-5">
+    {
+      healthInsurance.map((health) => (
+        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+          <div class="card bg-base-100 shadow-xl h-full">
+            <figure class="px-6 pt-6 h-48">
+              <img
+                src={health.data.image}
+                alt={health.data.title}
+                class="rounded-xl object-contain w-full h-full"
+              />
+            </figure>
+            <div class="card-body items-center text-center overflow-hidden">
+              <h2 class="card-title">{health.data.title}</h2>
+              <p class="line-clamp-3">{health.data.description}</p>
+              <div class="card-actions mt-4">
+                <a href={`health-insurance/${health.slug}`} class="btn btn-primary">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  ))
-}
+      ))
+    }
+  </div>
+
