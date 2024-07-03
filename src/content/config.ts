@@ -6,6 +6,7 @@ const healthCollection = defineCollection({
     title: z.string(),
     description: z.string(),
     image: z.string(),
+    url: z.string(),
   }),
 });
 

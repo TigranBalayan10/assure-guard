@@ -1,6 +1,6 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import HealthProvidersCard from "../components/HealthProvidersCard.astro";
+import Layout from "../../layouts/Layout.astro";
+import HealthProvidersCard from "../../components/HealthProvidersCard.astro";
 import { getCollection } from "astro:content";
 
 const healthProviders = await getCollection("health-providers");

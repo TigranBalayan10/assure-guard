@@ -2,6 +2,7 @@
 title: Business Health Insurance
 description: Business health insurance plans provide comprehensive coverage for your employees, helping you attract and retain top talent while promoting a healthy workforce. Learn more about the benefits of offering health insurance to your employees and the various plan options available.
 image: /img/health-insurance/business.svg
+url: health-providers-business
 ---
 
 ## Business Health Insurance

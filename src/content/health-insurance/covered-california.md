@@ -2,6 +2,7 @@
 title: Covered California
 description: Covered California is the state's health insurance marketplace where Californians can shop for health insurance plans. Learn more about Covered California and how to get health insurance coverage.
 image: /img/health-insurance/covered-california.svg
+url: health-providers-subsidized
 ---
 
 ## Covered California

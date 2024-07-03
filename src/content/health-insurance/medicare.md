@@ -2,6 +2,7 @@
 title: Medicare
 description: Medicare is a federal health insurance program designed to provide coverage for individuals who are 65 years or older, as well as some younger individuals with disabilities or specific health conditions. Learn more about Medicare and its various plans.
 image: /img/health-insurance/medicare.svg
+url: /get-quote
 ---
 
 ## Medicare Insurance Coverage

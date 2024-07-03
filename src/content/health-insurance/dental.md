@@ -2,6 +2,7 @@
 title: Dental Insurance
 description: Dental insurance plans help cover the costs of routine dental check-ups, cleanings, and various dental procedures. Our licensed insurance agents collaborate with trusted dental insurance providers to offer you a range of coverage options suited to your oral health needs.
 image: /img/health-insurance/dental.svg
+url: health-insurance-dental
 ---
 
 ## Dental Insurance

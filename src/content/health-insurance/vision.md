@@ -2,6 +2,7 @@
 title: Vision Insurance
 description: Vision insurance plans help cover the costs of routine eye exams, eyeglasses, and contact lenses. Our licensed insurance agents work with leading vision insurance providers to offer you a range of coverage options tailored to your needs.
 image: /img/health-insurance/vision.svg
+url: health-insurance-vision
 ---
 
 ## Vision Insurance
