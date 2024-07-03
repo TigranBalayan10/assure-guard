@@ -1,7 +1,10 @@
 ---
-import { getCollection } from "astro:content";
+import { CollectionEntry, getCollection } from "astro:content";
 import Layout from "../../../layouts/Layout.astro";
 // 1. Generate a new path for every collection entry
+interface Props {
+  entry: CollectionEntry<"health-providers">;
+}
 export async function getStaticPaths() {
   const healthProvider = await getCollection("health-providers");
 
@@ -19,8 +22,8 @@ const { Content } = await entry.render();
   <div class="prose prose-lg overflow-visible p-14 mx-auto max-w-6xl">
     <Content />
     <div class="mt-12 text-center">
-      <a href="/contact-us" class="btn no-underline text-white btn-block btn-primary">
-        Contact Us
+      <a href="/get-quote" class="btn no-underline text-white btn-block btn-primary">
+        GET A QUOTE
       </a>
     </div>
   </div>

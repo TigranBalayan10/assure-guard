@@ -10,6 +10,16 @@ const healthCollection = defineCollection({
   }),
 });
 
+const healthProvidersCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    image: z.string(),
+  }),
+});
+
 export const collections = {
   "health-insurance": healthCollection,
+  "health-providers": healthProvidersCollection,
 };
