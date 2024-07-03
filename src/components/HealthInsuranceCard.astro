@@ -11,11 +11,13 @@ const { healthInsurance } = Astro.props;
     healthInsurance.map((health) => (
       <div class="p-4">
         <div class="card sm:w-[640px] w-full bg-base-100 shadow-xl h-full">
-          <div class="badge badge-lg badge-primary absolute top-0 right-0 m-4 rotate-12">
-            {health.id === "covered-california.md"
-              ? "Subsidized"
-              : "Unsubsidized"}
-          </div>
+          {health.id !== "business.md" && (
+            <div class="badge badge-lg badge-primary absolute top-0 right-0 m-4 rotate-12">
+              {health.id === "covered-california.md"
+                ? "Subsidized"
+                : "Unsubsidized"}
+            </div>
+          )}
           <figure class="px-6 pt-6 h-48">
             <img
               src={health.data.image}
@@ -29,7 +31,7 @@ const { healthInsurance } = Astro.props;
             <div class="card-actions mt-4">
               <a
                 href={`health-insurance/${health.slug}`}
-                class="btn btn-primary"
+                class="btn btn-secondary btn-wide"
               >
                 Learn More
               </a>

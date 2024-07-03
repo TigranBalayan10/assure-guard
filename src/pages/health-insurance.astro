@@ -4,10 +4,12 @@ import HealthInsuranceCard from "../components/HealthInsuranceCard.astro";
 import { getCollection } from "astro:content";
 
 const healthInsuranceSub = await getCollection("health-insurance");
+const customOrder = ["covered-california.md", "private-insurance.md", "dental.md", "vision.md", "business.md", "medicare.md"];
+healthInsuranceSub.sort((a, b) => customOrder.indexOf(a.id) - customOrder.indexOf(b.id));
 ---
 
 <Layout>
-  <div class="hero m-5">
+  <div class="flex justify-center items-center min-h-screen m-5">
     <div class="max-w-3xl space-y-8">
       <h1 class="text-3xl font-bold mb-8 text-center">
         Comprehensive Insurance Solutions
@@ -64,6 +66,7 @@ const healthInsuranceSub = await getCollection("health-insurance");
       </p>
     </div>
   </div>
+  <div class="divider divider-secondary"></div>
   <div class="flex justify-center items-center min-h-screen">
     <HealthInsuranceCard healthInsurance={healthInsuranceSub} />
   </div>
