@@ -8,35 +8,9 @@ image: /img/health-insurance/molina.svg
 
 Molina Healthcare is a health insurance provider that specializes in providing coverage to individuals and families who are eligible for government-assisted healthcare programs, such as Medicaid and Medicare. With a mission to provide quality healthcare services to those who need it most, Molina Healthcare offers a range of health plans tailored to the needs of its members.
 
-### Medicaid
+### Individual and Family Plans
 
-Molina Healthcare is a managed care organization that contracts with state Medicaid programs to provide health insurance coverage to low-income individuals and families. Medicaid plans through Molina Healthcare may include:
-
-- Doctor visits and preventive care
-- Hospital services
-- Prescription drug coverage
-- Mental health and substance abuse treatment
-- Dental and vision services
-
-### Medicare
-
-Molina Healthcare offers several Medicare plans for eligible individuals, including:
-
-#### Medicare Advantage (Part C) Plans
-
-- Combines Part A, Part B, and often Part D coverage
-- May include additional benefits such as dental, vision, and hearing services
-- Offers a network of healthcare providers
-
-#### Medicare Special Needs Plans (SNPs)
-
-- Designed for individuals with specific health conditions or living situations
-- Provides specialized care and support services
-- Offers a network of healthcare providers with experience in treating specific conditions
-
-### Marketplace Plans
-
-Molina Healthcare participates in the Health Insurance Marketplace (also known as the Exchange) in several states. These plans are designed for individuals and families who do not qualify for Medicaid or Medicare but need affordable health insurance coverage. Marketplace plans through Molina Healthcare include:
+Molina plans are designed for individuals and families who do not qualify for Medicaid or Medicare but need affordable health insurance coverage. Marketplace plans through Molina Healthcare include:
 
 - Essential health benefits such as doctor visits, hospital services, and prescription drugs
 - Preventive care services at no additional cost

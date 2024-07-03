@@ -26,13 +26,6 @@ Kaiser Permanente offers a variety of individual and family plans to cater to yo
 - Preventive care covered before deductible
 - Ideal for those who want the benefits of an HMO with more control over healthcare costs
 
-#### HSA-qualified High Deductible Health Plans
-
-- High-deductible health plans (HDHPs) that allow you to open a Health Savings Account (HSA)
-- Tax-advantaged savings for qualified medical expenses
-- Lower monthly premiums compared to traditional plans
-- Preventive care covered before deductible
-
 ### Coverage Benefits
 
 Kaiser Permanente plans offer comprehensive coverage benefits, including:

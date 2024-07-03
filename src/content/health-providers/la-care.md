@@ -8,17 +8,8 @@ image: /img/health-insurance/la-care.png
 
 L.A. Care Health Plan is a public health plan dedicated to providing access to quality and affordable healthcare for Los Angeles County residents. As the largest publicly operated health plan in the country, L.A. Care offers a range of health insurance options to meet the diverse needs of individuals, families, and businesses.
 
-### Medi-Cal
 
-L.A. Care is one of the health plans that provides coverage for Medi-Cal, California's Medicaid program. Medi-Cal offers low-cost or free health coverage for eligible individuals and families, including:
-
-- Low-income adults, families, and children
-- Pregnant women
-- Seniors
-- People with disabilities
-- Foster care youth
-
-### L.A. Care Covered™
+### L.A. Care
 
 L.A. Care Covered™ is a health insurance marketplace plan offered through Covered California, the state's health insurance exchange. This plan offers affordable coverage options for individuals and families who do not qualify for Medi-Cal or employer-sponsored health insurance. L.A. Care Covered™ plans include:
 
@@ -27,24 +18,6 @@ L.A. Care Covered™ is a health insurance marketplace plan offered through Cove
 - Preventive care services at no additional cost
 - Prescription drug coverage
 
-### L.A. Care Cal MediConnect Plan
-
-L.A. Care Cal MediConnect Plan is designed for individuals who are eligible for both Medicare and Medi-Cal. This plan combines the benefits of both programs into a single, coordinated health plan. Benefits include:
-
-- Primary care, specialty care, and hospital services
-- Prescription drug coverage
-- Long-term care and support services
-- Transportation to medical appointments
-- Vision and dental services
-
-### PASC-SEIU Homecare Workers Health Care Plan
-
-L.A. Care partners with the Personal Assistance Services Council (PASC) and the Service Employees International Union (SEIU) to provide health coverage for In-Home Supportive Services (IHSS) workers. This plan offers comprehensive medical benefits, including:
-
-- Doctor visits and preventive care
-- Hospital services
-- Prescription drug coverage
-- Mental health and substance abuse treatment
 
 ### Additional Benefits and Resources
 

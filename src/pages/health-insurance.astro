@@ -3,15 +3,68 @@ import Layout from "../layouts/Layout.astro";
 import HealthInsuranceCard from "../components/HealthInsuranceCard.astro";
 import { getCollection } from "astro:content";
 
-const healthInsuranceSub = await getCollection("health-insurance", ({id}) => {
-    return id.startsWith("covered-california") || id.startsWith("private-insurance");
-});
+const healthInsuranceSub = await getCollection("health-insurance");
 ---
 
 <Layout>
-  <div
-    class="flex justify-center gap-8 max-sm:flex-col m-8"
-  >
+  <div class="hero m-5">
+    <div class="max-w-3xl space-y-8">
+      <h1 class="text-3xl font-bold mb-8 text-center">
+        Comprehensive Insurance Solutions
+        <br />
+        Subsidized and Private Plans
+      </h1>
+      <div class="card bg-base-200 shadow-md">
+        <div class="card-body">
+          <h2 class="card-title text-2xl text-primary font-bold italic">
+            Subsidized Insurance
+          </h2>
+          <p class="text-lg mb-4">
+            If you qualify for subsidies based on your income, we can assist you
+            in exploring affordable health plans through <span
+              class="text-primary font-bold italic">Covered California</span
+            >. These subsidized plans can significantly reduce or even eliminate
+            your monthly premiums, making quality health insurance more
+            accessible.
+          </p>
+          <p class="text-lg">
+            Our experienced insurance agents are dedicated to helping you find
+            the best subsidized coverage to meet your needs and budget. We'll
+            guide you through the process and ensure you receive the maximum
+            benefits available.
+          </p>
+        </div>
+      </div>
+      <div class="card bg-base-200 shadow-md">
+        <div class="card-body">
+          <h2 class="card-title text-2xl text-primary font-bold italic">
+            Private Insurance
+          </h2>
+          <p class="text-lg mb-4">
+            For those seeking private insurance, our agents work with <span
+              class="text-primary italic font-bold"
+              >trusted insurance providers</span
+            > to offer a variety of plans, including health, dental, and vision coverage.
+            We'll help you compare options, understand the benefits and costs, and
+            find the plan that best fits your specific requirements.
+          </p>
+          <p class="text-lg">
+            Whether you're an individual, family, or business, our
+            knowledgeable agents are here to guide you through the private
+            insurance process and ensure you have the protection you need.
+            We'll take the time to understand your unique situation and
+            provide personalized recommendations.
+
+          </p>
+        </div>
+      </div>
+      <p class="text-lg my-7">
+        Don't navigate the complex world of insurance alone. Let our experienced
+        agents help you secure the right coverage at the right price.
+      </p>
+    </div>
+  </div>
+  <div class="flex justify-center items-center min-h-screen">
     <HealthInsuranceCard healthInsurance={healthInsuranceSub} />
   </div>
 </Layout>

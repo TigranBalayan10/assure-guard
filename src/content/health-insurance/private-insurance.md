@@ -1,7 +1,7 @@
 ---
 title: Private Health Insurance
 description: Private health insurance plans offered by licensed insurance agents provide a wide range of coverage options from various reputable insurance providers. Learn more about private health insurance and how our experienced agents can help you find the right coverage tailored to your specific needs.
-image: /img/health-insurance/assure-guard.svg
+image: /img/health-insurance/femaledoc.svg
 ---
 
 ## Private Health Insurance
@@ -21,8 +21,6 @@ Private health insurance plans are offered by licensed insurance agents and prov
 - Health Net
 - Kaiser Permanente
 - Anthem Blue Cross
-- Oscar Health
-- Molina Healthcare
 
 ### Get the Right Coverage
 

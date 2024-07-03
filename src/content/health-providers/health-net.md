@@ -26,13 +26,6 @@ Healthnet offers a range of individual and family plans to suit your budget and 
 - Higher out-of-pocket costs compared to HMO plans
 - Out-of-network coverage available
 
-#### HSA-compatible Plans
-
-- High-deductible health plans (HDHPs) that allow you to open a Health Savings Account (HSA)
-- Tax-advantaged savings for qualified medical expenses
-- Lower monthly premiums compared to traditional plans
-- Preventive care covered before deductible
-
 ### Coverage Benefits
 
 Healthnet plans offer a wide range of coverage benefits, including:

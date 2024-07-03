@@ -26,12 +26,6 @@ Blue Shield of California offers several individual and family plans to fit your
 - Referrals required for specialist visits
 - Lower out-of-pocket costs compared to PPO plans
 
-#### HSA-compatible Plans
-
-- High-deductible health plans (HDHPs) that allow you to open a Health Savings Account (HSA)
-- Tax-advantaged savings for qualified medical expenses
-- Lower monthly premiums compared to traditional plans
-- Preventive care covered before deductible
 
 ### Coverage Benefits
 

@@ -25,28 +25,6 @@ Anthem Blue Cross offers several individual and family plans to fit your unique 
 - Referrals required for specialist visits
 - Lower out-of-pocket costs compared to PPO plans
 
-#### HSA-compatible Plans
-
-- High-deductible health plans (HDHPs) that allow you to open a Health Savings Account (HSA)
-- Tax-advantaged savings for qualified medical expenses
-- Lower monthly premiums compared to traditional plans
-- Preventive care covered before deductible
-
-### Medicare Plans
-
-Anthem Blue Cross offers several Medicare plans for eligible individuals, including:
-
-- Medicare Advantage (Part C) plans that combine Part A, Part B, and often Part D coverage
-- Medicare Supplement (Medigap) plans to help cover out-of-pocket costs not covered by Original Medicare
-- Medicare Part D prescription drug plans
-
-### Employer-sponsored Plans
-
-Anthem Blue Cross works with businesses of all sizes to provide employer-sponsored health insurance plans. These plans can be customized to meet the specific needs of your organization and employees.
-
-### Covered California
-
-Anthem Blue Cross participates in Covered California, the state's health insurance marketplace. Individuals and families can purchase Anthem Blue Cross plans through Covered California and may be eligible for premium subsidies based on their income.
 
 ### Additional Benefits and Resources
 
