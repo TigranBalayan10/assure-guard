@@ -6,7 +6,7 @@ interface Props {
 const { healthProviders } = Astro.props;
 ---
 
-<div class="flex flex-wrap justify-center gap-8 m-5">
+<div class="grid grid-cols-1 sm:grid-cols-4 gap-8 m-5">
   {
     healthProviders.map((health) => (
       <div class="card bg-base-100 w-80 h-96 shadow-xl">

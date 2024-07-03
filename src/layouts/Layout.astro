@@ -12,6 +12,8 @@ const {
   description = "We provide comprehensive health and life insurance solutions to protect you and your loved ones. Our experienced agents are dedicated to finding the best coverage options tailored to your unique needs. Get peace of mind with our reliable insurance services.",
   image = "/images/insurance.jpg",
 } = Astro.props;
+
+const currentPath = new URL(Astro.request.url).pathname;
 ---
 
 <!doctype html>
@@ -32,11 +34,27 @@ const {
     <meta property="og:image" content={image} />
     <title>{title}</title>
   </head>
-  <body class="min-h-screen flex flex-col">
+  <body class="min-h-screen flex flex-col bg-base-100">
     <Header />
     <main class="flex-grow">
+      <div class="container mx-auto px-4 py-8">
+        {
+          currentPath !== "/" && (
+            <div>
+              <a
+                href="javascript:history.back()"
+                class="btn btn-sm btn-primary
+          btn-outline"
+              >
+                <i class="fas fa-arrow-left mr-2" />
+                Back
+              </a>
+            </div>
+          )
+        }
+      </div>
       <slot />
     </main>
-    <Footer />
   </body>
+  <Footer />
 </html>
