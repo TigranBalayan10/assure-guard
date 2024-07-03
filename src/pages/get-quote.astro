@@ -1,0 +1,43 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <div class="flex justify-center items-center mt-10">
+    <div class="card w-[640px] bg-base-100 shadow-xl m-5">
+      <div class="card-body">
+        <h2 class="text-2xl font-bold text-center">Get a Quote</h2>
+        <p class="text-center mb-5">
+          Please fill out form and our agents will contract you as soon as
+          possible
+        </p>
+        <form class="form-control space-y-4">
+          <label class="input input-bordered flex items-center gap-2">
+            First Name
+            <input type="text" class="grow" placeholder="John" />
+          </label>
+          <label class="input input-bordered flex items-center gap-2">
+            Last Name
+            <input type="text" class="grow" placeholder="Doe" />
+          </label>
+          <label class="input input-bordered flex items-center gap-2">
+            Email
+            <input type="email" class="grow" placeholder="example@email.com" />
+          </label>
+          <label class="input input-bordered flex items-center gap-2">
+            Phone
+            <input type="tel" class="grow" placeholder="555-555-5555" />
+          </label>
+          <label class="input input-bordered flex items-center gap-2">
+            Age
+            <input type="number" class="grow" placeholder="Number" />
+          </label>
+            <textarea class="textarea textarea-lg textarea-bordered" placeholder="Your message here"></textarea>
+        </form>
+        <div class="card-actions justify-center mt-5">
+          <button class="btn btn-primary btn-wide">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
