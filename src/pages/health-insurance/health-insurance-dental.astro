@@ -1,0 +1,19 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import HealthProvidersCard from "../../components/HealthProvidersCard.astro";
+import { getCollection } from "astro:content";
+
+const healthProviders = await getCollection("health-providers",({ id }) => {
+      return id.startsWith("dental")
+});
+---
+
+<Layout>
+  <h1 class="text-center text-4xl font-bold mt-8">Health Carriers for Dental</h1>
+  <p class="text-center text-lg mt-4">
+    Find the best health carriers for dental insurance in your area.
+  </p>
+  <div class="flex justify-center gap-8 max-sm:flex-col m-8">
+    <HealthProvidersCard healthProviders={healthProviders} />
+  </div>
+</Layout>
