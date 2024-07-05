@@ -4,14 +4,14 @@ import HealthProvidersCard from "../../components/HealthProvidersCard.astro";
 import { getCollection } from "astro:content";
 
 const healthProviders = await getCollection("health-providers",({ id }) => {
-      return id.startsWith("blue-cross.md") || id.startsWith("blue-shield.md") || id.startsWith("kaiser.md") || id.startsWith("health-net.md") || id.startsWith("la-care.md") || id.startsWith("molina.md")
+      return id.startsWith("blue-shield-business.md") || id.startsWith("kaiser-business.md")
 });
 ---
 
 <Layout>
-  <h1 class="text-center text-4xl font-bold mt-8">Health Providers</h1>
+  <h1 class="text-center text-4xl font-bold mt-8">Health Carriers For Business</h1>
   <p class="text-center text-lg mt-4">
-    Find the best health providers in your area.
+    Find the best health carriers in your area.
   </p>
   <div class="flex justify-center gap-8 max-sm:flex-col m-8">
     <HealthProvidersCard healthProviders={healthProviders} />

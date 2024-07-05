@@ -11,7 +11,7 @@ const { healthInsurance } = Astro.props;
     healthInsurance.map((health) => (
       <div class="p-4">
         <div class="card sm:w-[640px] w-full bg-base-100 shadow-xl h-full">
-          {health.id !== "business.md" && (
+          {health.id !== "business.md" && health.id !== "medicare.md" && (
             <div class="badge badge-lg badge-primary absolute top-0 right-0 m-4 rotate-12">
               {health.id === "covered-california.md"
                 ? "Subsidized"

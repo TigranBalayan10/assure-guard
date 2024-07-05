@@ -20,7 +20,7 @@ const { Content } = await entry.render();
     <Content />
     <div class="mt-12 text-center">
       <a href={entry.data.url} class="btn no-underline btn-block">
-        {entry.id === "medicare.md" ? "GET A QUOTE" : "Find Health Providers"}
+        {entry.id === "medicare.md" || entry.id === "vision.md" ? "GET A QUOTE" : "Find Health Carriers"}
       </a>
     </div>
   </div>

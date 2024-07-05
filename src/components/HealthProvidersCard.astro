@@ -10,11 +10,11 @@ const { healthProviders } = Astro.props;
   {
     healthProviders.map((health) => (
       <div class="card bg-base-100 w-80 h-96 shadow-xl">
-        <figure class="px-10 pt-10 flex justify-center">
+        <figure class="px-6 pt-6 h-32 flex justify-center items-center">
           <img
             src={health.data.image}
             alt={health.data.title}
-            class="object-contain w-48 h-48"
+            class="max-h-full max-w-full object-contain"
           />
         </figure>
         <div class="card-body items-center text-center">
