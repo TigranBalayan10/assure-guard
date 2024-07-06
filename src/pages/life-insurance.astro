@@ -7,17 +7,26 @@ const lifeInsurance = await getCollection("life-insurance");
 ---
 
 <Layout>
-    <div class="flex justify-center items-center m-5">
-      <div class="max-w-7xl space-y-8">
-        <h1 class="text-3xl font-bold mb-8 text-center">
-          Comprehensive Life Insurance Solutions
-          <br />
-          Protect Your Loved Ones and Secure Your Future
-        </h1>
-      </div>
+  <div class="flex justify-center items-center m-5">
+    <div class="max-w-7xl space-y-8">
+      <h1 class="text-3xl font-bold mb-4 text-center">
+        Comprehensive Life Insurance Solutions
+      </h1>
+      <p class="text-xl text-center mb-8">
+        Protect Your Loved Ones and Secure Your Future
+      </p>
+      <p class="text-lg text-center">
+        Life insurance is an essential tool to ensure your family's financial
+        well-being and provide peace of mind. Our comprehensive life insurance
+        solutions are designed to meet your unique needs and help you safeguard
+        the future of your loved ones. Whether you're looking for temporary
+        coverage, lifelong protection, or a way to cover final expenses, our
+        experienced agents are here to guide you every step of the way.
+      </p>
     </div>
-    <div class="flex justify-center items-center min-h-screen">
-        <LifeInsuranceCard lifeInsurance={lifeInsurance} />
-    </div>
-   
-  </Layout>
+  </div>
+  <div class="divider divider-secondary"></div>
+  <div class="flex justify-center items-center min-h-screen">
+    <LifeInsuranceCard lifeInsurance={lifeInsurance} />
+  </div>
+</Layout>

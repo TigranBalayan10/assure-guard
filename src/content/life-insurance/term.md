@@ -2,7 +2,6 @@
 title: Term Life Insurance
 description: Term life insurance provides affordable coverage for a specific period, offering financial protection for your loved ones during your working years. Learn more about the benefits of term life insurance and how it can help you secure your family's future.
 image: /img/life-insurance/term.svg
-url: term-life-insurance
 ---
 
 ## Term Life Insurance
