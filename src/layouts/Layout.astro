@@ -34,13 +34,12 @@ const currentPath = new URL(Astro.request.url).pathname;
     <meta property="og:image" content={image} />
     <title>{title}</title>
   </head>
-  <body class="min-h-screen flex flex-col bg-base-100">
+  <body class="min-h-screen flex flex-col">
     <Header />
     <main class="flex-grow">
-      <div class="container mx-auto px-4 py-8">
         {
           currentPath !== "/" && (
-            <div>
+            <div class="container mx-auto px-4 py-4">
               <a
                 href="javascript:history.back()"
                 class="btn btn-sm btn-primary
@@ -52,7 +51,6 @@ const currentPath = new URL(Astro.request.url).pathname;
             </div>
           )
         }
-      </div>
       <slot />
     </main>
   </body>
