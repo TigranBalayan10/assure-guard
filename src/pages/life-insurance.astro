@@ -1,63 +1,23 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import LifeInsuranceCard from "../components/LifeInsuranceCard.astro";
+import { getCollection } from "astro:content";
+
+const lifeInsurance = await getCollection("life-insurance");
 ---
 
 <Layout>
-    <div class="flex justify-center items-center min-h-screen m-5">
+    <div class="flex justify-center items-center m-5">
       <div class="max-w-7xl space-y-8">
         <h1 class="text-3xl font-bold mb-8 text-center">
           Comprehensive Life Insurance Solutions
           <br />
           Protect Your Loved Ones and Secure Your Future
         </h1>
-        <div class="card bg-base-200 shadow-md">
-          <div class="card-body">
-            <h2 class="card-title text-2xl text-primary font-bold italic">
-              Term Insurance
-            </h2>
-            <p class="text-lg mb-4">
-              Term life insurance provides coverage for a specific period, typically ranging from <span class="text-primary font-bold">5 to 30 years</span>. It offers a cost-effective way to ensure your loved ones are financially protected in case of your unexpected death. If you pass away during the term, your beneficiaries will receive a guaranteed death benefit.
-            </p>
-            <p class="text-lg">
-              Term insurance is an excellent choice for those who want affordable coverage to replace lost income, pay off debts, or cover temporary needs like mortgage payments or children's education expenses.
-            </p>
-          </div>
-        </div>
-        <div class="card bg-base-200 shadow-md">
-          <div class="card-body">
-            <h2 class="card-title text-2xl text-primary font-bold italic">
-              Permanent Insurance
-            </h2>
-            <p class="text-lg mb-4">
-              Permanent life insurance, such as <span class="text-primary italic font-bold">whole life</span> and <span class="text-primary italic font-bold">universal life</span>, provides lifelong coverage as long as premiums are paid. In addition to a death benefit, permanent insurance policies build cash value over time, which you can access through loans or withdrawals.
-            </p>
-            <p class="text-lg">
-              Permanent insurance is suitable for those who want lifelong protection, estate planning, or a forced savings vehicle. It can also be used for business purposes, such as funding buy-sell agreements or key person insurance.
-            </p>
-          </div>
-        </div>
-        <div class="card bg-base-200 shadow-md">
-          <div class="card-body">
-            <h2 class="card-title text-2xl text-primary font-bold italic">
-              Final Expense Insurance
-            </h2>
-            <p class="text-lg mb-4">
-              Final expense insurance, also known as <span class="text-primary italic font-bold">burial insurance</span> or <span class="text-primary italic font-bold">funeral insurance</span>, is a type of permanent life insurance designed to cover end-of-life expenses, such as funeral costs, medical bills, and outstanding debts.
-            </p>
-            <p class="text-lg">
-              With final expense insurance, you can ease the financial burden on your family during an already difficult time. These policies typically have smaller death benefits and more lenient underwriting compared to other types of life insurance.
-            </p>
-          </div>
-        </div>
-        <p class="text-lg my-7">
-          Our experienced agents are here to help you understand your life insurance options and find the right coverage to protect your loved ones and secure your financial future. Let us guide you through the process and provide personalized recommendations tailored to your unique needs.
-        </p>
       </div>
     </div>
-    <div class="divider divider-secondary"></div>
-    <!--
     <div class="flex justify-center items-center min-h-screen">
-      <HealthInsuranceCard healthInsurance={healthInsuranceSub} />
+        <LifeInsuranceCard lifeInsurance={lifeInsurance} />
     </div>
-    -->
+   
   </Layout>

@@ -1,0 +1,37 @@
+---
+import type { CollectionEntry } from "astro:content";
+interface Props {
+  lifeInsurance: CollectionEntry<"life-insurance">[];
+}
+const { lifeInsurance } = Astro.props;
+---
+
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8 m-5">
+  {
+    lifeInsurance.map((life) => (
+      <div class="p-4">
+        <div class="card sm:w-[640px] w-full bg-base-100 shadow-xl h-full">
+          <figure class="px-6 pt-6 h-48">
+            <img
+              src={life.data.image}
+              alt={life.data.title}
+              class="rounded-xl object-contain w-full h-full"
+            />
+          </figure>
+          <div class="card-body items-center text-center overflow-hidden">
+            <h2 class="card-title">{life.data.title}</h2>
+            <p class="line-clamp-3">{life.data.description}</p>
+            <div class="card-actions mt-4">
+              <a
+                href={`life-insurance/${life.slug}`}
+                class="btn btn-secondary btn-wide"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    ))
+  }
+</div>
