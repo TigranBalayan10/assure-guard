@@ -11,32 +11,65 @@ import Layout from "../layouts/Layout.astro";
           Please fill out form and our agents will contract you as soon as
           possible
         </p>
-        <form class="form-control space-y-4">
+        <form
+          class="form-control space-y-4"
+          action="https://getform.io/f/bolggqma"
+          method="POST"
+        >
           <label class="input input-bordered flex items-center gap-2">
-            First Name
-            <input type="text" class="grow" placeholder="John" />
-          </label>
-          <label class="input input-bordered flex items-center gap-2">
-            Last Name
-            <input type="text" class="grow" placeholder="Doe" />
+            First and Last Name
+            <input
+              type="text"
+              class="grow"
+              placeholder="John Doe"
+              name="name"
+              required
+              minlength="3"
+            />
           </label>
           <label class="input input-bordered flex items-center gap-2">
             Email
-            <input type="email" class="grow" placeholder="example@email.com" />
+            <input
+              type="email"
+              class="grow"
+              placeholder="example@email.com"
+              name="email"
+              required
+            />
           </label>
           <label class="input input-bordered flex items-center gap-2">
             Phone
-            <input type="tel" class="grow" placeholder="555-555-5555" />
+            <input
+              type="number"
+              class="grow"
+              placeholder="1234567890"
+              name="tel"
+              required
+              min="10"
+              max="10"
+            />
           </label>
           <label class="input input-bordered flex items-center gap-2">
             Age
-            <input type="number" class="grow appearance-none" placeholder="Number" />
+            <input
+              type="number"
+              class="grow appearance-none"
+              placeholder="Number"
+              name="age"
+              required
+              min="18"
+              minlength="2"
+            />
           </label>
-            <textarea class="textarea textarea-lg textarea-bordered" placeholder="Your message here"></textarea>
+          <textarea
+            class="textarea textarea-lg textarea-bordered"
+            placeholder="Your message here"
+            name="message"
+            required
+            rows="6"></textarea>
+          <input type="hidden" name="_gotcha" style="display:none !important" />
+          <button type="submit" class="btn btn-primary btn-wide">Submit</button>
         </form>
-        <div class="card-actions justify-center mt-5">
-          <button class="btn btn-primary btn-wide">Submit</button>
-        </div>
       </div>
     </div>
   </div>
