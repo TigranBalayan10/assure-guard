@@ -10,7 +10,3 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
-body {
-  padding-top: 64px; /* Adjust this value to match your navbar height */
-}
