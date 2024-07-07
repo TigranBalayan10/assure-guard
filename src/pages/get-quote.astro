@@ -44,9 +44,11 @@ import Layout from "../layouts/Layout.astro";
               class="grow"
               placeholder="1234567890"
               name="tel"
+              pattern="[0-9]*"
+              inputmode="numeric"
               required
-              min="10"
-              max="10"
+              minlength="10"
+              maxlength="10"
             />
           </label>
           <label class="input input-bordered flex items-center gap-2">
@@ -56,6 +58,8 @@ import Layout from "../layouts/Layout.astro";
               class="grow appearance-none"
               placeholder="Number"
               name="age"
+              pattern="[0-9]*"
+              inputmode="numeric"
               required
               min="18"
               minlength="2"

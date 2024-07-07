@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import { ViewTransitions } from 'astro:transitions';
 interface Props {
   title?: string;
   description?: string;
@@ -20,6 +21,7 @@ const currentPath = new URL(Astro.request.url).pathname;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <ViewTransitions />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -36,7 +38,7 @@ const currentPath = new URL(Astro.request.url).pathname;
   </head>
   <body class="min-h-screen flex flex-col">
     <Header />
-    <main class="flex-grow pt-20">
+    <main class="flex-grow pt-20" transition:animate="fade">
         {
           currentPath !== "/" && (
             <div class="container mx-auto px-4 py-8">
