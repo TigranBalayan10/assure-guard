@@ -1,0 +1,15 @@
+---
+import { getEntry } from "astro:content";
+import Layout from "../layouts/Layout.astro"; // Adjust this import based on your project structure
+
+// Fetch the privacy policy content
+const privacyPolicy = await getEntry("privacy-policy", "policy");
+const { Content } = await privacyPolicy.render();
+const { title } = privacyPolicy.data;
+---
+
+<Layout title={title}>
+  <div class="prose prose-lg overflow-visible p-14 mx-auto max-w-6xl">
+    <Content />
+  </div>
+</Layout>

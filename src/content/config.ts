@@ -19,7 +19,15 @@ const healthProvidersCollection = defineCollection({
   }),
 });
 
+const privacyPolicyCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string()
+  }),
+});
+
 export const collections = {
   "health-insurance": healthCollection,
   "health-providers": healthProvidersCollection,
+  "privacy-policy": privacyPolicyCollection,
 };
