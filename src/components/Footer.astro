@@ -1,12 +1,12 @@
 <footer
-  class="footer bg-base-200 text-base-content rounded p-10 lg:flex lg:justify-between lg:items-center text-center border-t border-indigo-600"
+  class="footer bg-base-200 text-base-content rounded p-10 flex flex-col items-center lg:flex-row lg:justify-between lg:items-center border-t border-indigo-600"
 >
-  <aside>
+  <aside class="text-center mb-6 lg:mb-0">
     <p>
       Copyright © {new Date().getFullYear()} - All right reserved by AssureGuard Insurance Services
     </p>
   </aside>
-  <nav>
+  <nav class="mb-6 lg:mb-0">
     <div class="grid grid-flow-col gap-4">
       <a class="hover:text-blue-600 link">
         <i class="fa-brands fa-facebook fa-2xl"></i>
@@ -19,7 +19,7 @@
       </a>
     </div>
   </nav>
-  <nav class="grid grid-flow-col gap-4">
+  <nav class="grid grid-flow-col gap-4 text-center">
     <a class="link link-hover" href="/about-us">About us</a>
     <a class="link link-hover" href="/#contact-us" data-astro-reload>Contact</a>
     <a class="link link-hover" href="/privacy-policy">Privacy Policy</a>
