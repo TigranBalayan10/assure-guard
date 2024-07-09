@@ -65,6 +65,19 @@ import Layout from "../layouts/Layout.astro";
               minlength="2"
             />
           </label>
+          <label class="input input-bordered flex items-center gap-2">
+            Zip
+            <input
+              type="text"
+              class="grow appearance-none"
+              placeholder="Number"
+              name="zip"
+              pattern="[0-9]*"
+              inputmode="numeric"
+              required
+              minlength="5"
+            />
+          </label>
           <textarea
             class="textarea textarea-lg textarea-bordered"
             placeholder="Your message here"
